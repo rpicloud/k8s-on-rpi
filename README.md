@@ -22,4 +22,4 @@ Additions in this fork (very soon)
 * Timeout values tweaked for demo purposes (see Ray Tsang's [blog post](https://medium.com/google-cloud/everything-you-need-to-know-about-the-kubernetes-raspberry-pi-cluster-2a2413bfa0fa#.mf0burwfa)).
   * Marking unresponsive nodes unhealthy after 10 seconds insted of 40 seconds (--node-monitor-grace-period=10s)
   * Rescheduling/deletion of pods on failed nodes after 5 seconds instead of 5 minutes (--pod-eviction-timeout=5s)
-  * Deployment script for hypriot/rpi-java projects that builds docker image and uploads to Docker Hub
+  * [Deployment script](https://github.com/rpicloud/rpi-docker-deploy-script) for hypriot/rpi-java projects that builds docker image and uploads to Docker Hub
