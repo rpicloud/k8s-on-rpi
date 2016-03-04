@@ -19,6 +19,10 @@ echo "Copying configuration for faster timeout"
 mkdir -p /etc/kubernetes/manifests-multi/
 cp -f ./rootfs/etc/kubernetes/manifests-multi/master.json /etc/kubernetes/manifests-multi/master.json
 
+# Information about the script: https://github.com/rpicloud/rpi-docker-deploy-script
+echo "Copying Docker Hub deployment script for Java applications"
+cp -f ./rootfs/root/deploy-docker-hub.sh /root/deploy-docker-hub.sh
+
 echo "Reloading the system service configuration"
 systemctl daemon-reload
 
