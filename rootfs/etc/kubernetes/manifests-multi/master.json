@@ -14,7 +14,11 @@
               "--master=127.0.0.1:8080",
               "--v=2",
               "--node-monitor-grace-period=10s",
-              "--pod-eviction-timeout=5s"
+              "--pod-eviction-timeout=5s",
+              "--namespace-sync-period=30s",
+              "--concurrent_rc_syncs=10",
+              "--concurrent-endpoint-syncs=10",
+              "--service-sync-period=10s"
         ]
     },
     {
